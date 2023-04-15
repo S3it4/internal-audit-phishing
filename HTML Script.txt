@@ -1,0 +1,17 @@
+*This worked best for me right after the head location*
+//HTMLCode\\<head>
+
+*Title is not required*
+<title>Phishing Test</title>
+
+	<script>
+	  function runScript() {
+	    var shell = new ActiveXObject('WScript.Shell');
+	    shell.run('cmd.exe /k "python C:\\Users\\username\\phishtraining\\failed_test.py"');
+  	  }
+	</script>
+   //HTMLCode\\
+  </head>
+
+*This should replace the links you want to execute the script*
+<a href="#" onclick="runScript()" >Click Me!</a>
