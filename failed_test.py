@@ -21,7 +21,7 @@ pyautogui.sleep(2)
 
 # Type the AWS SES command
 message = "Subject={Data='Failed Awareness Test'},Body={Text={Data='The user of the computer %username%'}}"
-pyautogui.typewrite(f'aws ses send-email --from krytechcyber@gmail.com --destination ToAddresses=dazeygg@gmail.com --message "{message}"')
+pyautogui.typewrite(f'aws ses send-email --from senderemail@gmail.com --destination ToAddresses=recieveremail@gmail.com --message "{message}"')
 
 # Press Enter
 pyautogui.press('enter')
